@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { trackAnalyticsEvent } from "@/features/analytics/analytics";
 import { useGamification } from "@/features/gamification/provider";
 import type { TrackedRoute } from "@/features/gamification/types";
 
@@ -67,6 +68,7 @@ export function GamificationTracker() {
           dispatchEvent({ type: "resume-opened", at });
           break;
         case "resume-downloaded":
+          trackAnalyticsEvent("resume_downloaded");
           dispatchEvent({ type: "resume-downloaded", at });
           break;
         case "contact-opened":

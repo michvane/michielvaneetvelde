@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import { UmamiAnalytics } from "@/features/analytics/umami-analytics";
 import "./globals.css";
 
 const themeBootstrapScript = `
@@ -60,6 +61,7 @@ export default function RootLayout({
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: themeBootstrapScript }}
         />
+        {process.env.NODE_ENV === "production" ? <UmamiAnalytics /> : null}
       </body>
     </html>
   );

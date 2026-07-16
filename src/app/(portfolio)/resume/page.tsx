@@ -63,8 +63,8 @@ export default function ResumePage() {
           </p>
           <div className="mt-8 print:hidden" data-reveal="3">
             <LinkButton
-              href="/michiel-van-eetvelde-resume.pdf"
-              download="Michiel-Van-Eetvelde-Resume.pdf"
+              href="/michiel_van_eetvelde_resume.pdf"
+              download="Michiel_Van_Eetvelde_Resume.pdf"
               variant="secondary"
               data-gamification-event="resume-downloaded"
             >
