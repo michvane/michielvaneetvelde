@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Michiel Van Eetvelde — Portfolio
 
-## Getting Started
+Personal portfolio and frontend engineering showcase, built with Next.js, React, TypeScript, Tailwind CSS, and a self-hosted Unity WebGL experience.
 
-First, run the development server:
+The site is under active development. The repository is intentionally public so the implementation, accessibility decisions, performance boundaries, and engineering workflow can be inspected alongside the finished experience.
+
+## Development
+
+Install dependencies and start the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Quality checks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run typecheck
+npm run check
+npm run build
+```
 
-## Learn More
+## Architecture
 
-To learn more about Next.js, take a look at the following resources:
+- App Router pages and layouts are Server Components by default.
+- Interactive behavior is isolated in small Client Component boundaries.
+- Shared visual decisions are expressed through semantic design tokens and local UI primitives.
+- Feature-specific domain rules live outside page components.
+- The Unity WebGL payload is treated as a separate performance boundary and is loaded only after explicit launch.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+See [AGENTS.md](./AGENTS.md) for the repository contract, coding standards, validation expectations, and contribution workflow.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Core stack
 
-## Deploy on Vercel
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Geist and Geist Mono
+- Unity WebGL
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Status
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The current interface is an early placeholder. Public documentation will grow with implemented behavior rather than describing unshipped concepts.

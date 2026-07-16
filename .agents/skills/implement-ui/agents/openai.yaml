@@ -1,0 +1,4 @@
+interface:
+  display_name: "Implement UI"
+  short_description: "Build and verify polished portfolio UI"
+  default_prompt: "Use $implement-ui to build this portfolio UI as a complete, verified vertical slice."
