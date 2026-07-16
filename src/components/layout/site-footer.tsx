@@ -8,10 +8,7 @@ export function SiteFooter() {
         <p className="meta-label">
           © {new Date().getFullYear()} Michiel Van Eetvelde
         </p>
-        <div className="flex flex-col gap-1 sm:items-end">
-          <p className="meta-label">Web, mobile, and playful things · Belgium</p>
-          <BugReportChallenge />
-        </div>
+        <BugReportChallenge />
       </Container>
     </footer>
   );

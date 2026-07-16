@@ -159,7 +159,7 @@ export function BugReportChallenge() {
             </div>
             <button
               type="button"
-              className="-mr-2 -mt-2 inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center text-text-muted transition-colors hover:text-text"
+              className="-mr-2 -mt-2 inline-flex min-h-11 min-w-11 items-center justify-center text-text-muted transition-colors hover:text-text"
               aria-label="Close bug report"
               onClick={closeDialog}
             >
