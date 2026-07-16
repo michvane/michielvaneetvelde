@@ -13,9 +13,9 @@ import { Button } from "@/components/ui/button";
 import { useGamification } from "@/features/gamification/provider";
 
 const VERIFICATION_PHRASE = "THERE ARE NO BUGS HERE";
-const STARTING_TIME_MS = 5_000;
-const TIME_REDUCTION_MS = 160;
-const MINIMUM_TIME_MS = 1_800;
+const STARTING_TIME_MS = 4_200;
+const TIME_REDUCTION_MS = 400;
+const MINIMUM_TIME_MS = 700;
 const CHARACTER_COUNT = VERIFICATION_PHRASE.replaceAll(" ", "").length;
 
 type ChallengeStatus = "idle" | "running" | "failed";
@@ -159,7 +159,7 @@ export function BugReportChallenge() {
             </div>
             <button
               type="button"
-              className="-mr-2 -mt-2 inline-flex min-h-11 min-w-11 items-center justify-center text-text-muted transition-colors hover:text-text"
+              className="-mr-2 -mt-2 inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center text-text-muted transition-colors hover:text-text"
               aria-label="Close bug report"
               onClick={closeDialog}
             >

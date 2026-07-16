@@ -24,7 +24,7 @@ function buttonClasses(
   size: ButtonSize,
   className: string,
 ) {
-  return `inline-flex items-center justify-center gap-2 rounded-control border font-medium transition-[background-color,border-color,color] duration-200 ${variants[variant]} ${sizes[size]} ${className}`;
+  return `inline-flex cursor-pointer items-center justify-center gap-2 rounded-control border font-medium transition-[background-color,border-color,color] duration-200 ${variants[variant]} ${sizes[size]} ${className}`;
 }
 
 type ButtonProps = ComponentPropsWithoutRef<"button"> & {
