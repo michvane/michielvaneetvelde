@@ -43,6 +43,7 @@ export function Button({
     <button
       type={type}
       className={buttonClasses(variant, size, className)}
+      data-gamification-activation
       {...props}
     />
   );
@@ -60,6 +61,10 @@ export function LinkButton({
   ...props
 }: LinkButtonProps) {
   return (
-    <Link className={buttonClasses(variant, size, className)} {...props} />
+    <Link
+      className={buttonClasses(variant, size, className)}
+      data-gamification-activation
+      {...props}
+    />
   );
 }

@@ -31,18 +31,19 @@ Use npm because `package-lock.json` is the canonical lockfile.
 npm run dev
 npm run lint
 npm run typecheck
+npm run test
 npm run check
 npm run build
 ```
 
-Add test commands here when their tools are introduced. Run checks relevant to the change and run the production build before declaring a user-facing slice complete.
+Run checks relevant to the change and run the production build before declaring a user-facing slice complete.
 
 ## Architecture
 
 - Keep pages and layouts as Server Components by default.
 - Add `'use client'` only at the smallest boundary that needs browser APIs, effects, state, or event handlers.
-- Keep gamification rules, economy configuration, persistence, and migrations outside visual components.
-- Use stable domain events; do not let page components mutate Bit balances directly.
+- Keep achievement rules, persistence, and migrations outside visual components.
+- Use stable domain events; do not let page components award achievements directly.
 - Keep public content typed and separate from page layout where practical.
 - Do not mount or preload the Unity iframe or build assets until the visitor explicitly launches the game.
 - Prefer direct imports and feature-local types. Avoid broad barrel files and generic dumping grounds such as `utils.ts`.
@@ -97,7 +98,7 @@ For reviews, use `review-ui`. Report actionable findings by severity and include
 
 - Do not stage, commit, push, rewrite history, or create a pull request unless the user explicitly requests it.
 - Preserve unrelated working-tree changes.
-- Use lowercase Conventional Commit subjects when committing, for example `feat(gamification): add Bits persistence`.
+- Use lowercase Conventional Commit subjects when committing, for example `feat(gamification): add achievement persistence`.
 - Prefer one coherent, reviewable outcome per commit and pull request. Keep implementation, relevant tests, and necessary documentation together.
 - Avoid `WIP`, vague subjects, unrelated refactors, and AI attribution in commit messages.
 - UI pull requests should include representative desktop and mobile evidence plus verification, accessibility, and performance notes.

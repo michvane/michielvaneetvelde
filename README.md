@@ -20,6 +20,7 @@ Open [http://localhost:3000](http://localhost:3000).
 ```bash
 npm run lint
 npm run typecheck
+npm run test
 npm run check
 npm run build
 ```
@@ -30,6 +31,7 @@ npm run build
 - Interactive behavior is isolated in small Client Component boundaries.
 - Shared visual decisions are expressed through semantic design tokens and local UI primitives.
 - Feature-specific domain rules live outside page components.
+- Achievements are driven by typed domain events, validated versioned local persistence, and pure, unit-tested rules.
 - The Unity WebGL payload is treated as a separate performance boundary and is loaded only after explicit launch.
 
 See [AGENTS.md](./AGENTS.md) for the repository contract, coding standards, validation expectations, and contribution workflow.
@@ -40,9 +42,10 @@ See [AGENTS.md](./AGENTS.md) for the repository contract, coding standards, vali
 - React 19
 - TypeScript
 - Tailwind CSS 4
+- Vitest
 - Geist and Geist Mono
 - Unity WebGL
 
 ## Status
 
-The homepage and resume form the current public foundation. Documentation will evolve alongside each shipped feature.
+The homepage, resume, and first local-only gamification slice form the current foundation. Documentation will evolve alongside each shipped feature.

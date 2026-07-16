@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { LinkButton } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import {
   education,
@@ -31,6 +32,7 @@ export default function ResumePage() {
           href="/"
           className="group inline-flex min-h-11 items-center gap-2 text-sm text-text-muted transition-colors hover:text-accent-ink print:hidden"
           data-reveal
+          data-gamification-activation
         >
           <span
             aria-hidden="true"
@@ -59,6 +61,17 @@ export default function ResumePage() {
           >
             {resumeIntro}
           </p>
+          <div className="mt-8 print:hidden" data-reveal="3">
+            <LinkButton
+              href="/michiel-van-eetvelde-resume.pdf"
+              download="Michiel-Van-Eetvelde-Resume.pdf"
+              variant="secondary"
+              data-gamification-event="resume-downloaded"
+            >
+              Download resume
+              <span aria-hidden="true">↓</span>
+            </LinkButton>
+          </div>
         </header>
 
         <div

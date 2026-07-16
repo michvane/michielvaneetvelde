@@ -75,12 +75,21 @@ export default function HomePage() {
                 <p className="meta-label text-text-muted">Stack</p>
                 <p className={valueClasses}>React & React Native</p>
               </div>
-              <Link href="/resume" className={linkCellClasses}>
+              <Link
+                href="/resume"
+                className={linkCellClasses}
+                data-gamification-activation
+                data-gamification-event="resume-opened"
+              >
                 <LinkCellBody label="Resume" value="See experience" />
               </Link>
               <a
                 href="https://www.linkedin.com/in/michiel-van-eetvelde-03649b163/"
                 className={linkCellClasses}
+                target="_blank"
+                rel="noreferrer"
+                data-gamification-activation
+                data-gamification-event="contact-opened"
               >
                 <LinkCellBody label="Contact" value="LinkedIn" external />
               </a>
