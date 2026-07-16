@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Generated Unity WebGL output is not application source.
+    "public/game/**",
   ]),
 ]);
 

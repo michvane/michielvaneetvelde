@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# private local planning
+/PORTFOLIO_FEATURES.md
+/PRIVATE_TECHNICAL_PLAN.md

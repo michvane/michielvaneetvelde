@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review UI"
+  short_description: "Review portfolio UI across quality dimensions"
+  default_prompt: "Use $review-ui to review this portfolio UI for visual, responsive, accessibility, and performance issues."
