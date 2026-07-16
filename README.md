@@ -45,4 +45,4 @@ See [AGENTS.md](./AGENTS.md) for the repository contract, coding standards, vali
 
 ## Status
 
-The current interface is an early placeholder. Public documentation will grow with implemented behavior rather than describing unshipped concepts.
+The homepage and resume form the current public foundation. Documentation will evolve alongside each shipped feature.

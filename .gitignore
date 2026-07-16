@@ -43,3 +43,6 @@ next-env.d.ts
 # private local planning
 /PORTFOLIO_FEATURES.md
 /PRIVATE_TECHNICAL_PLAN.md
+
+# local agent configuration
+/.claude/
