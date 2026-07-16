@@ -32,6 +32,7 @@ npm run build
 - Shared visual decisions are expressed through semantic design tokens and local UI primitives.
 - Feature-specific domain rules live outside page components.
 - Achievements are driven by typed domain events, validated versioned local persistence, and pure, unit-tested rules.
+- Privacy-friendly Umami analytics track page views, resume downloads, and anonymous achievement unlocks in production.
 - The Unity WebGL payload is treated as a separate performance boundary and is loaded only after explicit launch.
 
 See [AGENTS.md](./AGENTS.md) for the repository contract, coding standards, validation expectations, and contribution workflow.
