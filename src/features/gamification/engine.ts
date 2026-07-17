@@ -72,25 +72,6 @@ function mergeResults(
   );
 }
 
-function recordMeaningfulInteraction(
-  state: GamificationState,
-  at: number,
-): EngineResult {
-  if (state.flags.meaningfulInteractionCompleted) {
-    return unchanged(state);
-  }
-
-  const nextState: GamificationState = {
-    ...state,
-    flags: {
-      ...state.flags,
-      meaningfulInteractionCompleted: true,
-    },
-  };
-
-  return earnAchievement(nextState, "hello-world", at);
-}
-
 function recordQualifyingActivation(
   state: GamificationState,
   at: number,
@@ -181,8 +162,8 @@ export function applyGamificationEvent(
 
   let result: EngineResult;
   switch (event.type) {
-    case "meaningful-interaction-completed":
-      result = recordMeaningfulInteraction(state, event.at);
+    case "site-visited":
+      result = earnAchievement(state, "hello-world", event.at);
       break;
     case "qualifying-activation":
       result = recordQualifyingActivation(state, event.at);

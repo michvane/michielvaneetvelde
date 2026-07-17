@@ -82,7 +82,6 @@ export function migrateGamificationState(
     }
   }
 
-  const storedFlags = isRecord(storedValue.flags) ? storedValue.flags : {};
   const storedPreferences = isRecord(storedValue.preferences)
     ? storedValue.preferences
     : {};
@@ -97,10 +96,6 @@ export function migrateGamificationState(
       ),
     },
     routesVisited,
-    flags: {
-      meaningfulInteractionCompleted:
-        storedFlags.meaningfulInteractionCompleted === true,
-    },
     preferences: {
       soundEnabled:
         storedValue.version === GAMIFICATION_SCHEMA_VERSION

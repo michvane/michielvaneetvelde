@@ -16,7 +16,9 @@ import {
 
 function hasProgress(progress: GamificationState): boolean {
   return (
-    Object.keys(progress.achievements).length > 0 ||
+    Object.keys(progress.achievements).some(
+      (achievementId) => achievementId !== "hello-world",
+    ) ||
     progress.counters.activeSeconds > 0 ||
     progress.counters.qualifyingActivations > 0 ||
     Object.keys(progress.routesVisited).length > 1
@@ -198,7 +200,7 @@ export function AchievementHud() {
             <div>
               <p className="text-sm font-semibold">Reset local progress?</p>
               <p className="mt-1 text-xs leading-5 text-text-muted">
-                Achievements on this device will be cleared.
+                Progress beyond the starter achievement will be cleared.
               </p>
               <div className="mt-3 flex gap-2">
                 <button

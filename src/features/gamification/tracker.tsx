@@ -60,7 +60,6 @@ export function GamificationTracker() {
       }
 
       const at = Date.now();
-      dispatchEvent({ type: "meaningful-interaction-completed", at });
       dispatchEvent({ type: "qualifying-activation", at });
 
       switch (control.dataset.gamificationEvent) {

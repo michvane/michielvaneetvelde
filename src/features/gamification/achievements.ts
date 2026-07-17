@@ -23,8 +23,8 @@ export const COMPLETIONIST_REQUIREMENTS = [
 export const achievementDefinitions = {
   "hello-world": {
     title: "Hello, World",
-    description: "You found the interactive layer.",
-    hint: "Try any highlighted control",
+    description: "The portfolio loaded. You’re already making progress.",
+    hint: "Visit the website",
   },
   "button-enthusiast": {
     title: "Button Enthusiast",

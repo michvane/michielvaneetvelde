@@ -30,9 +30,6 @@ export type GamificationState = {
     qualifyingActivations: number;
   };
   routesVisited: Partial<Record<TrackedRoute, number>>;
-  flags: {
-    meaningfulInteractionCompleted: boolean;
-  };
   preferences: {
     soundEnabled: boolean;
   };
@@ -42,7 +39,7 @@ export type GamificationState = {
 };
 
 export type GamificationEvent =
-  | { type: "meaningful-interaction-completed"; at: number }
+  | { type: "site-visited"; at: number }
   | { type: "qualifying-activation"; at: number }
   | { type: "active-time-elapsed"; at: number; seconds: number }
   | { type: "route-visited"; at: number; route: TrackedRoute }
@@ -73,9 +70,6 @@ export function createInitialGamificationState(now: number): GamificationState {
       qualifyingActivations: 0,
     },
     routesVisited: {},
-    flags: {
-      meaningfulInteractionCompleted: false,
-    },
     preferences: {
       soundEnabled: true,
     },

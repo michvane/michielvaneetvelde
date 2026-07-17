@@ -123,6 +123,17 @@ export function GamificationProvider({
   }, []);
 
   useEffect(() => {
+    if (!runtime.isReady || runtime.progress.achievements["hello-world"]) {
+      return;
+    }
+
+    dispatch({
+      type: "event",
+      event: { type: "site-visited", at: Date.now() },
+    });
+  }, [runtime.isReady, runtime.progress.achievements]);
+
+  useEffect(() => {
     if (!runtime.isReady) {
       return;
     }

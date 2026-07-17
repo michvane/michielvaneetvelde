@@ -9,14 +9,14 @@ import { createInitialGamificationState } from "@/features/gamification/types";
 const STARTED_AT = 1_000;
 
 describe("gamification engine", () => {
-  it("awards Hello, World once for the first meaningful interaction", () => {
+  it("awards Hello, World once for visiting the website", () => {
     const initial = createInitialGamificationState(STARTED_AT);
     const first = applyGamificationEvent(initial, {
-      type: "meaningful-interaction-completed",
+      type: "site-visited",
       at: 2_000,
     });
     const repeated = applyGamificationEvent(first.state, {
-      type: "meaningful-interaction-completed",
+      type: "site-visited",
       at: 3_000,
     });
 
