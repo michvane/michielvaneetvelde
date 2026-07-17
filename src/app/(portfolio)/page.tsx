@@ -83,16 +83,13 @@ export default function HomePage() {
               >
                 <LinkCellBody label="Resume" value="See experience" />
               </Link>
-              <a
-                href="https://www.linkedin.com/in/michiel-van-eetvelde-03649b163/"
+              <Link
+                href="/contact"
                 className={linkCellClasses}
-                target="_blank"
-                rel="noreferrer"
                 data-gamification-activation
-                data-gamification-event="contact-opened"
               >
-                <LinkCellBody label="Contact" value="LinkedIn" external />
-              </a>
+                <LinkCellBody label="Contact" value="Get in touch" />
+              </Link>
             </div>
           </div>
         </div>

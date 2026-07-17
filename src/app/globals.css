@@ -198,6 +198,14 @@ button:enabled {
   animation: bug-report-timer var(--challenge-duration) linear both;
 }
 
+.privacy-map-camera {
+  transition: transform 640ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.privacy-map-refuse {
+  animation: privacy-map-refuse 420ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 @keyframes reveal {
   from {
     opacity: 0;
@@ -263,6 +271,20 @@ button:enabled {
 
   to {
     transform: scaleX(0);
+  }
+}
+
+@keyframes privacy-map-refuse {
+  0% {
+    transform: scale(1);
+  }
+
+  35% {
+    transform: scale(1.045);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 
