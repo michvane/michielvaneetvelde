@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#100e0b" />
+  <rect
+    x="3"
+    y="3"
+    width="58"
+    height="58"
+    fill="none"
+    stroke="#e5c75f"
+    stroke-width="3"
+  />
+  <path
+    d="M15 45V20L32 36L49 20V45"
+    fill="none"
+    stroke="#f5f3ed"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+    stroke-width="6"
+  />
+  <path d="m51 10 1.6 3.4L56 15l-3.4 1.6L51 20l-1.6-3.4L46 15l3.4-1.6L51 10Z" fill="#e5c75f" />
+</svg>
