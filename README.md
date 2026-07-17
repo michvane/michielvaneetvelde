@@ -1,4 +1,4 @@
-# Michiel Van Eetvelde — Portfolio
+# Michiel Van Eetvelde - Portfolio
 
 Personal portfolio and frontend engineering showcase, built with Next.js, React, TypeScript, Tailwind CSS, and a self-hosted Unity WebGL experience.
 

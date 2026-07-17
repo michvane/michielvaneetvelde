@@ -19,7 +19,7 @@ export default function NotFound() {
             There&apos;s nothing at this address.
           </h1>
           <p className="mt-6 max-w-md text-base leading-7 text-text-muted">
-            The page you&apos;re looking for doesn&apos;t exist — or
+            The page you&apos;re looking for doesn&apos;t exist - or
             doesn&apos;t exist yet. This portfolio is still growing.
           </p>
           <LinkButton href="/" variant="secondary" className="mt-9">

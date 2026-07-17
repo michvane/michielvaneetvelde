@@ -35,8 +35,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Michiel Van Eetvelde — Software engineer",
-    template: "%s — Michiel Van Eetvelde",
+    default: "Michiel Van Eetvelde - Software engineer",
+    template: "%s - Michiel Van Eetvelde",
   },
   description:
     "Software engineer with a front-end focus, building thoughtful web and mobile products.",

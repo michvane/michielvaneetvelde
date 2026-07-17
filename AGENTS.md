@@ -1,7 +1,7 @@
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
+This version has breaking changes - APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
 
 # Project contract
@@ -73,10 +73,14 @@ Run checks relevant to the change and run the production build before declaring 
 - Prefer named exports for reusable components and modules; use default exports where Next.js file conventions expect them.
 - Keep business rules pure and testable. Keep side effects behind narrow adapters.
 - Name props and domain objects for what they represent; avoid vague names such as `data` and `item` when a precise term exists.
-- Comments explain intent, constraints, or surprising behavior—not syntax.
+- Comments explain intent, constraints, or surprising behavior - not syntax.
 - Do not suppress lint, type, or accessibility errors without documenting the reason.
 - Remove dead code instead of commenting it out.
 - Do not mix unrelated cleanup into a feature change.
+
+## Writing style
+
+- Never use em dashes in copy, documentation, code comments, commit messages, or user-facing communication. Use a standard hyphen (`-`) instead.
 
 ## Accessibility and performance
 
