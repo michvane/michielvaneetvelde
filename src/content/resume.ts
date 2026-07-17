@@ -24,7 +24,7 @@ export const employment: readonly EmploymentRole[] = [
       "Built major app features such as the discoverability tab (DeFi tokens, charts, market data), social features, web3 account importing, staking and much more.",
       "Created AI skills that automate parts of the delivery process to ship faster with higher quality.",
       "Improved performance and responsiveness across app and web through targeted optimizations.",
-      "Built and iterated on features informed by data — experimentation with LaunchDarkly, product analytics in Looker, and monitoring and debugging with Datadog and Sentry.",
+      "Built and iterated on features informed by data - experimentation with LaunchDarkly, product analytics in Looker, and monitoring and debugging with Datadog and Sentry.",
       "Collaborated with designers and backend teams to ship cohesive, scalable interfaces and maintain a shared design system.",
       "Integrated CMS and CRM systems such as HubSpot, Contentful, and Braze.",
       "Worked closely with SEO and QA to improve the visibility and accessibility of the web platform.",
@@ -42,7 +42,7 @@ export const employment: readonly EmploymentRole[] = [
   {
     role: "Full Stack Developer",
     company: "A&C Systems",
-    period: "2020 — 2021",
+    period: "2017 — 2020",
     highlights: [
       "Created and maintained webshops for multiple Belgian internet providers in PHP.",
       "Developed and maintained SaaS projects using React, MUI, and Symfony.",

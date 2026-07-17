@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "Resume",
   description:
-    "Resume of Michiel Van Eetvelde — software engineer with a front-end focus and 8+ years of experience building web and mobile applications.",
+    "Resume of Michiel Van Eetvelde - software engineer with a front-end focus and 8+ years of experience building web and mobile applications.",
 };
 
 function SectionHeading({ children }: Readonly<{ children: React.ReactNode }>) {
